@@ -1,0 +1,117 @@
+.welcome-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.welcome-section {
+    padding: 20px;
+    background: linear-gradient(135deg, #b2c0ff, #4a6cf7);
+    border-radius: 10px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.welcome-section h1 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.option-btn-welcome {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-btn {
+    background: #4a6cf7;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background: #2d50dc;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(74, 109, 247, 0.25);
+}
+
+.register-btn {
+    background: #e6e8ff;
+    color: #4a6cf7;
+}
+
+.register-btn:hover {
+    background:  #b2c0ff;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color:#333;;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4a6cf7;
+    outline: none;
+}
+
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: #4a6cf7;
+    font-weight: 500;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 900px;
+    }
+    .welcome-illustration {
+    flex: 1;
+    }
+    .welcome-section, .options, .login, .register {
+    flex: 1;
+    }
+}

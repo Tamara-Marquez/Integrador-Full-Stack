@@ -1,42 +1,37 @@
-import React from 'react';
-import './../styles/styles.css';
-
-
+import '../styles/Navbar.css'
+import { Link } from 'react-router-dom';
 
 export default function navbar() {
     return (
-        <>
-        <div className='grid'>
-        <nav className='section_nav'>
-            <ul className='nav'>
-                <li className='nav_item'>
-                    <a href="#home"> 🏠 Home </a>
+        <nav class="section_nav">
+            <ul class="nav">
+                <li class="nav_item">
+                    <Link to="/">🏠 Home</Link>
                 </li>
-                <li className='nav_item'>
-                    <a href="#categorias"> 📁 Categorias</a>
-                    <ul className='sub_nav'>
-                        <li className='sub_nav-item'>
-                            <a href="#autos" > 🏎️ Autos </a>
-                        </li>
-                        <ul className='sub_nav'>
-                        <li className='sub_nav-item'>
-                            <a href="#motos" > 🛵 Motos </a>
-                        </li>
-                        </ul>
-                    </ul>
+                <li className="nav_item">
+                    <Link to="/catalogo">📚 Catálogos</Link>
+                <ul className="sub_nav">
+                    <li className="sub_nav-item">
+                        <Link to="/catalogo/autos">🏎️ Autos</Link>
+                    </li>
+                    <li className="sub_nav-item">
+                        <Link to="/catalogo/motos">🛵 Motos</Link>
+                    </li>
+                </ul>
+                </li>    
+                <li className="nav_item">
+                    <Link to="/carrito">🛒 Carrito</Link>
                 </li>
-                <li className='nav_item'>
-                    <a href="#carrito"> 🛒 Carrito </a>
+                <li className="nav_item">
+                    <Link to="/login">🔑 Login</Link>
                 </li>
-                <li className='nav_item'>
-                    <a href="#nosotros"> 🫂 Nosotros </a>
+                <li className="nav_item">
+                    <Link to="/nosotros">🫂 Nosotros</Link>
                 </li>
-                <li className='nav_item'>
-                    <a href="#ayuda"> ❓ Ayuda </a>
+                <li className="nav_item">
+                    <Link to="/ayuda">❓ Ayuda</Link>
                 </li>
-            </ul>
-        </nav>
-        </div>
-        </>
+        </ul>
+    </nav>
 );
 }
