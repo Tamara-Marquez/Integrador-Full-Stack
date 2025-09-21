@@ -34,7 +34,6 @@ export default function Register() {
 
     return (
     <section className="welcome-container">
-    <div className='register'>
         <h2> Registrarse </h2>
         {error && <p className='error'> {error} </p>}
         {success && <p className='success'> {success} </p> }
@@ -67,10 +66,9 @@ export default function Register() {
                     onChange={(e)=> setPassword (e.target.value)}
                 />
             </div>
-            <button type='submit' className='back-btn'> Crear cuenta </button>
-            <Link to='/'> Volver </Link>
+            <button type='submit' className="btn btn-primary"> Crear cuenta </button>
+            <Link to='/' className="btn btn-link"> Volver </Link>
         </form>
-    </div>
     </section>
 );
 }

@@ -22,7 +22,6 @@ export default function Login() {
     
     return (
         <section className="welcome-container">
-        <div className="login">
             <h2> Iniciar Sesión </h2>
             {error && <p className="error">{error} </p>}
             <form onSubmit={handleSubmit}>
@@ -42,10 +41,9 @@ export default function Login() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)} />
                 </div>
-                <button type="submit" className='back-btn'> Acceder </button>
-                <Link to='/registrarse'> Registrarse </Link>
+                <button type="submit" className="btn btn-primary"> Acceder </button>
+                <Link to='/registrarse' className="btn btn-secondary"> Registrarse </Link>
             </form>
-        </div>
         </section>
     );
 }

@@ -1,36 +1,67 @@
-.welcome-container  {
+
+
+ /* CONTENEDOR GENERAL */
+.welcome-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     max-width: 400px;
     width: 90%;
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    background-color: #fff;
+    font-family:  sans-serif;
+
 }
 
-.welcome-section {
-    padding: 20px;
-    background: linear-gradient(135deg, #b2c0ff, #4a6cf7);
-    border-radius: 10px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
+/* TITULOS */
+.welcome-container h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #4a6cf7;
+    text-align: center;
 }
 
-.welcome-section h1 {
-    font-weight: 600;
-    margin-bottom: 10px;
+/* FORMULARIO */
+.form-group {
+    margin-bottom: 18px;
+    width: 90%;
+    
+    
 }
 
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+}
 
-.option-btn-welcome {
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1.5px solid #7c8897;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4a6cf7;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+}
+
+/* BOTONES */
+.btn {
     display: block;
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     margin: 12px 0;
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
@@ -39,79 +70,54 @@
     text-align: center;
 }
 
-.login-btn {
+.btn-primary {
     background: #4a6cf7;
     color: #fff;
 }
 
-.login-btn:hover {
+.btn-primary:hover {
     background: #2d50dc;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(74, 109, 247, 0.25);
+    transform: translateY(-2px);
 }
 
-.register-btn {
+.btn-secondary {
     background: #e6e8ff;
     color: #4a6cf7;
 }
 
-.register-btn:hover {
-    background:  #b2c0ff;
-    color: #fff;
-    transform: translateY(-3px);
+.btn-secondary:hover {
+    background: #b2c0ff;
+    color: #4b4848;
+    transform: translateY(-2px);
 }
 
-
-.form-group {
-    margin-bottom: 18px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 500;
-    color:#333;;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 50px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    transition: all 0.2s;
-}
-
-.form-group input:focus {
-    border-color: #4a6cf7;
-    outline: none;
-}
-
-
-.back-btn {
-    display: block;
-    text-align: center;
-    margin-top: 12px;
-    color: #4a6cf7;
+.btn-link {
+    background: none;
+    color: #6b7280;
     font-weight: 500;
 }
 
-.back-btn:hover {
+.btn-link:hover {
     text-decoration: underline;
 }
 
+/* MENSAJES */
+.error {
+    background: #ffe2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
 
-@media (min-width: 768px) {
-    .container {
-    flex-direction: row;
-    gap: 20px;
-    max-width: 900px;
-    }
-    .welcome-illustration {
-    flex: 1;
-    }
-    .welcome-section, .options, .login, .register {
-    flex: 1;
-    }
+.success {
+    background: #e2ffe6;
+    color: #15803d;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
 }
